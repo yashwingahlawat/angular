@@ -1,4 +1,63 @@
-<h1>Yashwin</h1>
-<h2>{{factorial(5)}}</h2>
-<app-login></app-login>
-<button (click)="clickFun(6)">Click</button>
+<!-- <h1>Counter App</h1>
+<div style="text-align: center;">
+    <h2>{{count}}</h2>
+    <div>
+        <button class="btn bg-red" (click)="handleCounter('sub')">Decrement</button>
+        <button class="btn bg-black " (click)="handleCounter('reset')">Reset</button>
+        <button class="btn bg-green " (click)="handleCounter('add')">Increment</button>
+    </div>
+    <button class="btn bg-black" name="login" (click)="handleEvent($event)">Click</button>
+    <div class="btn bg-black" name="login" (mouseenter)="handleEvent($event)">Click</div>
+    <div class="btn bg-black" name="login" (mouseleave)="handleEvent($event)">Click</div>
+    <input 
+        type="text"
+        style="width: 100px;" 
+        placeholder="enter"
+        (focus)="handleEvent($event)"
+        (blur)="handleEvent($event)"
+        (input)="handleEvent($event)"
+    >
+</div> -->
+
+<!-- <div>
+    <h1>Get and Set Input Field</h1>
+    <h2>User's name is {{displayName}}</h2>
+    <div>
+        <input type="text" placeholder="enter name" value="{{name}}" (change)="handleChange($event)">
+        <div>
+            <button (click)="handleClick()">Get value</button>
+            <button (click)="handleSetName()">Set value</button>
+        </div>
+    </div>
+</div>
+<div>
+    <h1>Get and Set Input Field</h1>
+    <h2>User's Email is {{email}}</h2>
+    <div>
+        <input type="text" placeholder="enter name" #emailField>
+        <div>
+            <button (click)="handleEmail(emailField.value)">Get email</button>
+            <button (click)="handleSetName()">Set email</button>
+        </div>
+    </div>
+</div>
+@if(x){
+    <button class="btn bg-black" (click)="handleHide()">ok</button>
+}
+@else{
+    <button class="btn bg-green" (click)="handleHide()">ok</button>
+} -->
+<!-- @for(user of users;track user){
+    <h1>{{user}}</h1>
+}
+<br/>
+@for(student of students;track student.name;let id=$index){
+    <h2>{{student.name}}</h2>
+    <h3>{{student.age}}</h3>
+    <h3>{{id}}</h3>
+    <button (click)="studentName(student.name)">OK</button>
+} -->
+
+<h1>{{x}}</h1>
+<h1>{{count()}}</h1>
+<button (click)="setData()">Click</button>
