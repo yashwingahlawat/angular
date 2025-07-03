@@ -57,7 +57,54 @@
     <h3>{{id}}</h3>
     <button (click)="studentName(student.name)">OK</button>
 } -->
-
-<h1>{{x}}</h1>
+<!-- 
+<h1>{{preCal()}}</h1>
 <h1>{{count()}}</h1>
 <button (click)="setData()">Click</button>
+<button (click)="updateVal()">Click</button> -->
+<!-- 
+@for (user of users; track user;let i=$index) {
+    @if($even){
+        <h1 style="background-color: red;">{{i}}index of user-> {{user}}</h1>
+    }
+    @else {
+        <h1>{{i}}index of user-> {{user}}</h1>
+    }
+    @if($last){
+        <h2>{{$count}}</h2>
+    }
+    
+}
+@empty() {
+        <h1>no record</h1>
+    } -->
+<!-- 
+<input [(ngModel)]="name" type="text" placeholder="enter task">
+<h1>{{name}}</h1>
+<button (click)="addTask(name)">add task</button>
+@for(task of taskList;track task.id){
+    <ul class="task">
+        <li>{{task.id+1}}</li>
+        <li>{{task.task}}</li>
+        <button (click)="deleteTask(task.id)">Delete</button>
+    </ul>
+} -->
+
+<!-- <h1 
+    [style.backgroundColor]="bgColor"
+    [style.fontSize]="fontSize"
+>hlo</h1>
+<h1 [style.fontSize]="zome?fontSizeBig:fontSizeSmall">Heading</h1>
+<button (click)="changeZoom()">zoom</button> -->
+
+<h1 *ngIf="check">Heading</h1>
+<ul>
+    <li *ngFor="let x of users">{{x}}</li>
+</ul>
+
+<div *ngIf="login; else elseBlock">
+    <a href="/">Logout</a>
+</div>
+<ng-template #elseBlock>
+    <a href="/">Login</a>
+</ng-template>
